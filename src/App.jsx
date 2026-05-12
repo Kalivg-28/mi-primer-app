@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-     <Saludo nombre = ' Karen y Leslie' />
+    <Saludo nombre=" Karen y Leslie" tipo="Alumno" />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
