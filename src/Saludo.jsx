@@ -1,7 +1,7 @@
-function Saludo() {
+function Saludo(props) {
   return (
     <div>
-      <p>Buenos días</p>
+      <p>Buenos días{props.nombre}</p>
     </div>
   );
 }
