@@ -1,12 +1,14 @@
-function Saludo(props) {
+function Saludo({ nombre, tipo }) {
   return (
     <div>
-      <p>Buenos días{props.nombre}</p>
+      <p>Buenos días, {nombre}</p>
+      <p>Tipo: {tipo}</p>
     </div>
-  );
+  )
 }
 
-export default Saludo;
+export default Saludo
+
 /* otra opcion
 function Saludo({ nombre, tipo }) {
   return (
@@ -17,3 +19,4 @@ function Saludo({ nombre, tipo }) {
 }
 
 export default Saludo;*/
+
