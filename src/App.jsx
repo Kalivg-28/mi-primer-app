@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'import reactLogo from './assets/react.svg'
+import { useEffect, useState } from 'react'
+import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Saludo from './Saludo'
@@ -6,10 +7,21 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [nombre, setNombre] = useState('Karen y Leslie')
+  const [tipo, setTipo] = useState('Alumno')
+
+  useEffect(() => {
+    console.log('El componente App se cargó correctamente')
+  }, [])
+
+  useEffect(() => {
+    console.log(`Nombre actualizado: ${nombre}`)
+    console.log(`Tipo actualizado: ${tipo}`)
+  }, [nombre, tipo])
 
   return (
     <>
-    <Saludo nombre=" Karen y Leslie" tipo="Alumno" />
+    <Saludo nombre={nombre} tipo={tipo} />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
